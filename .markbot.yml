@@ -1,0 +1,66 @@
+repo: 'responsive-image-caption'
+canvasCourse: '467502'
+canvasAssignment: '4178357'
+
+naming: true
+commits: 2
+liveWebsite: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    has:
+      - ['link[href*="Denk+One"]', 'The webfont “Denk One” is missing']
+      - 'img.img-flex[src$="dimetrodon.svg"]'
+      - 'h2'
+      - 'p'
+    search:
+      - 'Dimetrodon'
+      - 'Often mistaken for a dinosaur but went extinct 40 M years before dinosaurs.'
+
+css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['html', 'font', 'normal 100%/1.3 Georgia, serif']
+      - ['*', 'box-sizing', 'inherit']
+      - ['body', 'margin', '0']
+      - ['.img-flex', 'display', 'block']
+      - ['.img-flex', 'width', '100%']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+      - '@media only screen and \(min-width: 38em\) \{'
+      - '@media only screen and \(min-width: 60em\) \{'
+      - '@media only screen and \(min-width: 90em\) \{'
+      - 'font-size: 110%'
+      - 'font-size: 120%'
+      - 'font-size: 130%'
+      - 'line-height: 1\.4'
+      - 'line-height: 1\.5'
+      - 'position: relative'
+      - 'position: absolute'
+      - 'background-color: #e2e2e2;'
+      - 'font-family: "Denk One", sans-serif;'
+      - 'font-size: 1.5rem;'
+      - 'background-color: rgba\(0, 0, 0, \.3\)'
+      - 'border-radius:'
+    search_not:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
+      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
+
+screenshots:
+  - path: 'index.html'
+    sizes: [320, 400, 608, 980, 1440]
