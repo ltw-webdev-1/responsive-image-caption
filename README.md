@@ -15,7 +15,7 @@
 
 ## Details
 
-- *Typefaces:* `Denk One`
+- *Typefaces:* `Denk One`, `Georgia`
 - *Text sizes:* `1.5rem`
 - *Colours:* `#e2e2e2`, `rgba(0, 0, 0, .3)`
 - *Standard media query widths:* `38em`, `60em`, `90em`
