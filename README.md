@@ -9,6 +9,7 @@
 
 - *Fork this repository.*
 - Code the layout that matches the screenshots.
+- Text can be found inside the `content.txt` file.
 - *Run it through Markbot and make sure it passes all the checks.*
 
 ---
