@@ -34,11 +34,11 @@ figure {
 figcaption {
   margin: 1em;
   padding-bottom: .5em;
-  background-color: rgba (0, 0, 0, .3);
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -64,12 +64,39 @@ h2 {
   figcaption {
     position: absolute;
     color: #fff;
-    background: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .3);
     top: 150px;
     right: 0;
     width: 20rem;
     border-radius: 10px;
     padding-left: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  figcaption {
+    top: 280px;
+    right: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  figcaption {
+    top: 480px;
   }
 
 }
