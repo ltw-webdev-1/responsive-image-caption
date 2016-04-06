@@ -12,7 +12,7 @@ html:
     bestPractices: true
     has:
       - ['link[href*="Denk+One"]', 'The webfont “Denk One” is missing']
-      - 'img.img-flex[src$="dimetrodon.svg"]'
+      - ['img.img-flex[src$="dimetrodon.svg"]', 'The image of the Dimetrodon should have the class `.img-flex`']
       - 'h2'
       - 'p'
     search:
@@ -53,7 +53,7 @@ css:
       - 'background-color: #e2e2e2;'
       - 'font-family: "Denk One", sans-serif;'
       - 'font-size: 1.5rem;'
-      - 'background-color: rgba\(0, 0, 0, \.3\)'
+      - 'background-color: rgba\(0, 0, 0, 0?\.3\)'
       - 'border-radius:'
     search_not:
       - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
