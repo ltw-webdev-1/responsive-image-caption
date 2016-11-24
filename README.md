@@ -1,11 +1,12 @@
-# Responsive image & caption
-
-- Approx. completion time: **1 hour**
-- Deliverables: **1 HTML file, 1 CSS file, images**
-
+---
+summary: 'Create a responsive image and caption using the CSS position properties and media queries.'
+time: '1 hour'
+deliverables: '1 HTML file, 1 CSS file, images'
 ---
 
-**Create a responsive image and caption using the CSS position properties and media queries.**
+# Responsive image & caption
+
+## Overview
 
 - *Fork this repository.*
 - Code the layout that matches the screenshots.
@@ -28,7 +29,7 @@
 
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
-- [Final screenshots in the “screenshots” folder.](screenshots)
+- Final screenshots in the “screenshots” folder.
 - [**Watch this video to see how it interacts.**](https://youtu.be/jUkCdgGDlvs)
 
 ---

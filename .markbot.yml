@@ -1,10 +1,14 @@
 repo: 'responsive-image-caption'
-canvasCourse: '467502'
-canvasAssignment: '4178357'
+canvasCourse: 'web-dev-1'
 
 naming: true
-commits: 2
+restrictFileTypes: true
 liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
 
 html:
   - path: 'index.html'
@@ -34,26 +38,23 @@ css:
       - ['body', 'margin', '0']
       - ['.img-flex', 'display', 'block']
       - ['.img-flex', 'width', '100%']
+      - ['@38em', 'html', 'font-size', '110%']
+      - ['@38em', 'html', 'line-height', '1.4']
+      - ['@60em', 'html', 'font-size', '120%']
+      - ['@60em', 'html', 'line-height', '1.5']
+      - ['@90em', 'html', 'font-size', '130%']
     search:
       - '@-moz-viewport'
       - '@-ms-viewport'
       - '@-o-viewport'
       - '@-webkit-viewport'
       - '@viewport'
-      - '@media only screen and \(min-width: 38em\) \{'
-      - '@media only screen and \(min-width: 60em\) \{'
-      - '@media only screen and \(min-width: 90em\) \{'
-      - 'font-size: 110%'
-      - 'font-size: 120%'
-      - 'font-size: 130%'
-      - 'line-height: 1\.4'
-      - 'line-height: 1\.5'
       - 'position: relative'
       - 'position: absolute'
       - 'background-color: #e2e2e2;'
       - 'font-family: "Denk One", sans-serif;'
       - 'font-size: 1.5rem;'
-      - 'background-color: rgba\(0, 0, 0, 0?\.3\)'
+      - 'background-color: rgba\(0, 0, 0, .3\)'
       - 'border-radius:'
     search_not:
       - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
