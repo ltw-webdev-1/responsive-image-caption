@@ -1,19 +1,22 @@
 repo: 'responsive-image-caption'
 canvasCourse: 'web-dev-1'
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - google-fonts
+  - img-flex
+  - css
+  - border-box
+  - responsive-css
+  - responsive-font-sizes
+  - body-margin-0
+  - screenshots-all
 
 html:
   - path: 'index.html'
-    valid: true
-    bestPractices: true
+    outline: false
     has:
       - ['link[href*="Denk+One"]', 'The webfont “Denk One” is missing']
       - ['img.img-flex[src$="dimetrodon.svg"]', 'The image of the Dimetrodon should have the class `.img-flex`']
@@ -28,27 +31,8 @@ css:
     valid: true
     bestPractices: true
     has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['html', 'text-size-adjust', '100%']
-      - ['html', '-moz-text-size-adjust', '100%']
-      - ['html', '-ms-text-size-adjust', '100%']
-      - ['html', '-webkit-text-size-adjust', '100%']
       - ['html', 'font', 'normal 100%/1.3 Georgia, serif']
-      - ['*', 'box-sizing', 'inherit']
-      - ['body', 'margin', '0']
-      - ['.img-flex', 'display', 'block']
-      - ['.img-flex', 'width', '100%']
-      - ['@38em', 'html', 'font-size', '110%']
-      - ['@38em', 'html', 'line-height', '1.4']
-      - ['@60em', 'html', 'font-size', '120%']
-      - ['@60em', 'html', 'line-height', '1.5']
-      - ['@90em', 'html', 'font-size', '130%']
     search:
-      - '@-moz-viewport'
-      - '@-ms-viewport'
-      - '@-o-viewport'
-      - '@-webkit-viewport'
-      - '@viewport'
       - 'position: relative'
       - 'position: absolute'
       - 'background-color: #e2e2e2;'
@@ -56,12 +40,3 @@ css:
       - 'font-size: 1.5rem;'
       - 'background-color: rgba\(0, 0, 0, .3\)'
       - 'border-radius:'
-    search_not:
-      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
-      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
-      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
-      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
-
-screenshots:
-  - path: 'index.html'
-    sizes: [320, 400, 608, 980, 1440]
